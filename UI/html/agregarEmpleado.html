@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar empleado</title>
+    <link href="../css/estiloAgregar.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../js/agregar.js"></script>
+</head>
+<body>
+    <div class="menu">
+        <ul id="opciones">
+            <li id="opcion1"><a href="menu.html">Inicio</a></li>
+            <li id="opcion2"><a href="modificarEmpleado.html">Modificar empleados</a></li>
+            <li id="opcion3"><a href="eliminarEmpleado.html">Eliminar empleados</a></li>
+            <li id="opcion4"><a href="consultarEmpleado.html">Consultar empleados</a></li>
+        </ul>
+    </div>
+    <div class="contenedorPrincipal">
+        <h1 id="titulo">Agregar nuevo empleado</h1>
+        <h2 id="instruccion">Ingresa los siguientes datos</h2>
+    </div>
+    <div class="form">
+        <label id="lblNombre">Nombre</label>
+        <input type="text" class="form-control" placeholder="Pedro Oswaldo" id="inputNombre">
+        <label id="lblApellidos">Apellidos</label>
+        <input type="text" class="form-control" placeholder="Benitez Morales" id="inputApellidos">
+        <label id="lblNumero">Teléfono</label>
+        <input type="text" class="form-control" placeholder="4427971787" id="inputNumero">
+        <label id="lblCorreo">Correo electrónico</label>
+        <input type="email" class="form-control" placeholder="pbenitez09@gmail.com" id="inputCorreo">
+        <label id="lblDireccion">Dirección</label>
+        <input type="text" class="form-control" placeholder="Galindas, Sinaloa, #344" id="inputDireccion">
+        <div class="botones">
+            <button class="btn btn-primario">Agregar</button>
+        </div>
+    </div>
+</body>
+</html>

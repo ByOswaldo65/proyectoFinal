@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliminar empleado</title>
+    <link href="../css/estiloEliminar.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../js/eliminar.js"></script>
+</head>
+<body>
+    <div class="menu">
+         <ul id="opciones">
+            <li id="opcion1"><a href="menu.html">Inicio</a></li>
+            <li id="opcion2"><a href="agregarEmpleado.html">Agregar empleados</a></li>
+            <li id="opcion3"><a href="modificarEmpleado.html">Modificar empleados</a></li>
+            <li id="opcion4"><a href="consultarEmpleado.html">Consultar empleados</a></li>
+        </ul>
+     </div>
+    <div class="contenedorPrincipal">
+        <h1 id="titulo">Eliminar empleado</h1>
+        <h2 id="instruccion">Selecciona un empleado para eliminar</h2>
+    </div>
+    <div class="elementos">
+        <select id="elegir" name="elegir">
+            <option disabled selected id="pdt">Selecciona un empleado</option>
+        </select>
+        <div class="form">
+            <label id="lblNombre">Nombre</label>
+            <input type="text" class="form-control" placeholder="Pedro Oswaldo" id="inputNombre" readonly>
+            <label id="lblApellidos">Apellidos</label>
+            <input type="text" class="form-control" placeholder="Benitez Morales" id="inputApellidos" readonly>
+            <label id="lblNumero">Teléfono</label>
+            <input type="text" class="form-control" placeholder="4427971787" id="inputNumero" readonly>
+            <label id="lblCorreo">Correo electrónico</label>
+            <input type="email" class="form-control" placeholder="pbenitez09@gmail.com" id="inputCorreo" readonly>
+            <label id="lblDireccion">Dirección</label>
+            <input type="text" class="form-control" placeholder="Galindas, Sinaloa, #344" id="inputDireccion" readonly>
+            <div class="botones">
+                <button class="btn btn-primario">Eliminar</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
